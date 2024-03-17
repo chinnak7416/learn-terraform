@@ -1,3 +1,4 @@
+# functions is  called in terraform as Module
 module "demo-1" {
   source = "./demo"
   Name = "demo-1"
