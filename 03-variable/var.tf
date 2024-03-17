@@ -37,3 +37,8 @@ output "y" {
 output "z" {
   value = var.z_map["x"]
 }
+# we can declare empty variables, But data can be send from a file, those files are called as 'tfvars'
+variable "env" {}
+output "env" {
+  value = var.env
+}
