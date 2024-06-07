@@ -9,13 +9,13 @@ resource "aws_instance" "ec2" {
 }
 
 variable "ami" {
-  default = "ami-05f020f5935e52dc4"
+  default = "ami-031d574cddc5bb371"
 }
 variable "instance_type" {
   default = "t3.micro"
 }
 variable "security_groups" {
-  default = ["sg-00d3e3d7744a86ad7"]
+  default = ["sg-06080f8fcec874b2f"]
 }
 variable "instance_types" {
   default = {
