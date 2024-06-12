@@ -1,5 +1,5 @@
 resource "aws_instance" "test" {
-  ami           = "ami-05f020f5935e52dc4"
+  ami           = "ami-031d574cddc5bb371"
   instance_type = "t3.small"
   vpc_security_group_ids = [data.aws_security_group.selected.id]
 
@@ -26,7 +26,7 @@ data "aws_security_group" "selected" {
 # 1.If Provisioner fails then instance we don't want to re-create another instance
 # 2.Requirements emerge in a way that we need to return the provisioner again and again (meaning those provisioning commands we need to run again and again)
 resource "aws_instance" "test1" {
-  ami                    = "ami-05f020f5935e52dc4"
+  ami                    = "ami-031d574cddc5bb371"
   instance_type          = "t3.small"
   vpc_security_group_ids = [data.aws_security_group.selected.id]
 }
